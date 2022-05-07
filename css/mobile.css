@@ -1,0 +1,55 @@
+
+#what .items{
+    display:flex;
+    flex-direction: column;
+}
+#what .items .item{
+    display: flex;
+    text-align: left;
+}
+#what .items .item i {
+    margin-right: 1.3rem;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+
+@media(max-width: 500px){
+    #navbar{
+        flex-direction:column;
+        align-items: center;
+    }
+    #navbar .logo{
+        margin-bottom: .5rem;
+        text-align: center;
+    }
+    #navbar ul{
+       padding: .5rem;
+    }
+    #showcase .showcase-content{
+        text-align: center;
+        top: 110px;
+    }
+    #showcase .showcase-content .l-heading{
+        font-size: 3rem;
+    }
+    #what .items .item{
+        text-align: left;
+        padding: 0;
+    }
+    #what .container{
+        padding: 0;
+    }
+    #who .who-image{
+        display: none;
+    }
+    #our-client .client-items div:last-child{
+        display: none;
+    }
+    #our-client img{
+        width: 80%;
+    }
+    #contact-map .contact-items{
+        flex-direction: column;
+    }
+}

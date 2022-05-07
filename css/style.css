@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none ;
+}
+h3{
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+}
+p{
+    line-height: 1.75rem;
+}
+label{
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: .25rem;
+    
+}
+input, textarea, button{
+    width: 100%;
+
+}
+input {
+    height: 2rem;
+}
+
+button{
+    width: 100%;
+    background: black;
+    color: white;
+    border-radius: .5rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+/*Utility classes*/
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+.text-primary{
+    color: rgb(34, 151, 34);
+}
+
+.l-heading{
+    font-size: 4rem;
+}
+.bg-light{
+    background: whitesmoke;
+}
+.m-heading{
+    font-size: 2rem;
+}
+.text-centre{
+    text-align: center;
+}
+.py-1{padding: 1.1rem;}
+.btn{
+    background: rgb(102, 235, 102);
+    padding: .5rem 1.5rem;
+    border-radius: .25rem;
+    color: white;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    background: rgb(37, 37, 37);
+    display: flex;
+    color: white;
+    padding: 1rem;
+    justify-content: space-between;
+
+}
+nav ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+nav ul li a{
+    color: white;
+    padding: .75rem;
+    
+}
+nav ul li a:hover{
+    background:  rgb(34, 151, 34);
+    border-radius: .25rem;
+}
+/*Showcase*/
+#showcase{
+    background: #333 url('../img/showcase.jpg') 
+    no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    
+}
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 2rem;
+    /*Overlay*/
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+.showcase-content h1{
+    padding-bottom: 1rem ;
+}
+.showcase-content p{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+.showcase-content a {
+    margin-top : 1.5rem ;
+    background: rgb(102, 235, 102);
+    padding: .5rem 1.5rem;
+    border-radius: .25rem;
+    color: white;
+}
+.showcase-content a:hover{
+    background: rgb(34, 151, 34) ;
+} 
+/* Section What We Do*/
+#what .items{
+    display: flex;
+    padding: 1rem;
+}
+#what .items .item{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+#what .items .item i{
+    background: rgb(102, 235, 102) ;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+/* Section who We Are*/
+#who {
+    display: flex;
+}
+#who div{
+    flex: 1;
+}
+#who .who-image{
+   background: url('../img/people.jpg') 
+   no-repeat center center/cover;
+    
+}
+#who .who-content {
+    background: rgb(43, 41, 41);
+    color: white;
+    padding: 1.5rem 2rem;
+}
+#who .who-content h1, 
+#who .who-content h2{
+    margin-bottom: 1rem;
+}
+#who .who-content p{
+    line-height: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+#who .who-content li{
+    line-height: 2rem;
+    border-bottom: 1px solid rgb(70, 66, 66) ;
+    list-style: none;
+}
+/* Section Our Client*/
+#our-client h2{
+    text-align: center;
+    padding: 1rem;
+}
+#our-client .client-items{
+    display: flex;
+}
+
+#our-client img{
+    display: block;
+    margin: auto;
+    width: 60%;
+    margin-bottom:2rem ;
+}
+/* Section Contact and Map*/ 
+#contact-map .contact-items{
+    display: flex;
+}
+#contact-map .contact-items .contact{
+    padding: 2rem;
+    background: rgb(112, 216, 8);
+    color: white;
+flex: 1;
+}
+#contact-map .contact-items .map{
+flex: 2;
+}
+/*footer*/
+footer{
+    text-align: center;
+    padding: 2rem;
+    background: rgb(14, 13, 13);
+    color: white;
+}
